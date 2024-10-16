@@ -1,0 +1,83 @@
+/* src/styles/Dashboard.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+}
+
+/* Dashboard container */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Dark color for header */
+    margin-bottom: 20px;
+}
+
+/* Content styles */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff; /* White card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Button styles */
+.button {
+    background-color: #007bff; /* Primary color for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Margin for spacing */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header {
+        font-size: 20px; /* Smaller header on mobile */
+    }
+    .content {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 18px; /* Even smaller header on very small screens */
+    }
+    .card {
+        padding: 15px; /* Less padding on small cards */
+    }
+    .button {
+        padding: 8px 16px; /* Smaller button padding */
+    }
+}

@@ -1,0 +1,36 @@
+/* src/styles/Sidebar.css */
+
+.sidebar {
+    width: 250px; /* Width of the sidebar */
+    height: 100vh; /* Full height */
+    background-color: #2c3e50; /* Background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    position: fixed; /* Fixed position */
+}
+
+.sidebar-header {
+    text-align: center; /* Center header text */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.sidebar-menu {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar-menu li {
+    margin: 15px 0; /* Space between menu items */
+}
+
+.sidebar-menu a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold font for links */
+    transition: color 0.3s; /* Transition effect for hover */
+}
+
+.sidebar-menu a:hover {
+    color: #3498db; /* Change color on hover */
+}
